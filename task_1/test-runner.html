@@ -12,7 +12,50 @@
     <script src="../lib/jasmine/boot.js"></script>
 
     <!-- include source files here... -->
-    <script src="solution.js"></script>
+    <script src="solution.js"> function addInCartMessage(title, price) {
+    let productName = title;
+    let productPrice = price;
+
+  // Задание №1.1. Оповещение о добавлении в корзину
+
+    // создайте переменную message
+    let message;
+    // присвойте переменной message значение переменной productName
+    message = productName;
+    // добавьте в конец переменной message пробел
+    message = message + " ";
+    // добавьте в конец переменной message текст 'за'
+    message = message + "за";
+    // добавьте в конец переменной message пробел
+    message = message + " ";
+    // добавьте в конец переменной message значение переменной productPrice
+    message = message + productPrice;
+    // добавьте в конец переменной message пробел
+    message = message + " ";
+    // добавьте в конец переменной message текст 'теперь в корзине!'
+    message = message + "теперь в корзине!";
+    // выведите переменную message в консоль
+   console.log (message);
+    // Конец решения задания №1.1.
+
+    return message;
+}
+
+function addInCartCountChange(value) {
+
+    // Задание №1.2. Увеличение количества в корзине
+    let oldValue = value;
+
+    // создайте переменную newValue
+    let newValue;
+    // присвойте ей значение oldValue
+    newValue = oldValue;
+    // увеличьте значение newValue на 1
+   newValue = newValue + 1;   
+    // Конец решения задания №1.2.
+
+    return newValue;
+}</script>
 
     <!-- include spec files here... -->
     <script src="../lib/task_1.js"></script>

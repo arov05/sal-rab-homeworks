@@ -25,10 +25,12 @@ function renderCartItem(item) {
     // 5. Присвойте переменной itemCountText результат склеивания itemCountText и ` ₽ = `
      itemCountText = itemCountText + '₽ =';
     // 6. Создайте переменную sum и присвойте ей значение произведения количества и цены
-       itemCountText = itemCountText + ;
+       itemCountText = itemCountText + '500';
     // 7. Присвойте переменной itemCountText результат склеивания itemCountText и sum
+    let sum = 
+     itemCountText = itemCountText + ;
     // 8. Присвойте переменной itemCountText результат склеивания itemCountText и ` ₽`
-
+       itemCountText = itemCountText + '500';
     // Конец решения задания №3.1.
 
     return `<div class="cart-item"><div>${product.title}</div><div>${itemCountText}</div></div>`;

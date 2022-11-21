@@ -42,7 +42,7 @@ function sendRequest(name, phone, address, goods, sum) {
 //for (let i = 0; i < countOfGoods; i += 1) {
 //data.goods.push(goods[i].title);
 //}
-    let data = {client: {name, phone}, order: {address, sum}, goods:[{title, count}] };
+    let data = {client: {name, phone}, order: {address, sum}, goods:[{title:'Пицца', count:2}] };
     let countOfGoods = goods.length;
 
     for (let i = 0; i <= countOfGoods; i += 1) {

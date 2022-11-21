@@ -54,7 +54,7 @@ let data = { client: name + " " + phone, order: { address, sum }, goods: [] };
 
     data.client = 'Иван';
 
-    let jsonData = JSON.stringify(data);
+    let jsonData = JSON.stringify({data: data});
 
     return jsonData;
 }
